@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+venv*/
+.venv/
+*.db
+
+# Backend artifacts
+backend/app/data/artifacts/*.joblib
+backend/app/data/artifacts/*.pkl
+backend/app/data/datasets/user_*
+
+# MLflow experiment tracking store (additive)
+backend/app/data/mlflow/
+backend/mlruns/
+
+# Node
+node_modules/
+build/
+.env.local
+
+# OS
+.DS_Store
+
+# Logs
+*.log

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  background-color: #070a09;
+  color: #e8efe9;
+  font-family: "Inter", system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.glass {
+  background: rgba(18, 27, 22, 0.55);
+  border: 1px solid rgba(34, 255, 142, 0.12);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+}
+
+.glass-hover {
+  transition: all 0.25s ease;
+}
+.glass-hover:hover {
+  border-color: rgba(34, 255, 142, 0.4);
+  box-shadow: 0 0 30px rgba(34, 255, 142, 0.12);
+  transform: translateY(-2px);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #22ff8e, #0fae66);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #22ff8e, #0fae66);
+  color: #04130b;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 0.7rem 1.4rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 25px rgba(34, 255, 142, 0.25);
+}
+.btn-primary:hover {
+  box-shadow: 0 0 35px rgba(34, 255, 142, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #e8efe9;
+  border-radius: 12px;
+  padding: 0.7rem 1.4rem;
+  transition: all 0.2s ease;
+}
+.btn-ghost:hover {
+  border-color: rgba(34, 255, 142, 0.4);
+  background: rgba(34,255,142,0.06);
+}
+
+.input-field {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 0.65rem 0.9rem;
+  color: #e8efe9;
+  outline: none;
+  transition: border-color 0.2s ease;
+  width: 100%;
+}
+.input-field:focus {
+  border-color: #22ff8e;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(34,255,142,0.2);
+  border-radius: 8px;
+}
+
+.badge-pass {
+  background: rgba(34,255,142,0.12);
+  color: #22ff8e;
+  border: 1px solid rgba(34,255,142,0.3);
+}
+.badge-fail {
+  background: rgba(255,75,75,0.12);
+  color: #ff6b6b;
+  border: 1px solid rgba(255,75,75,0.3);
+}
+.badge-pending {
+  background: rgba(255,200,60,0.12);
+  color: #ffce3c;
+  border: 1px solid rgba(255,200,60,0.3);
+}
